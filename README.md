@@ -1,9 +1,11 @@
 # Simple Todo App
 
 This to-do application allows you to create tasks with due dates. This application allows you to check tasks that have been completed and also allows the deletion of tasks.
+This to-do application allows you to create tasks with due dates. This application allows you to check tasks that have been completed and also allows the deletion of tasks.
 
 ## Functionality
 
+This to-do application features validation when entering a new task, requiring at least 2 letters be entered before accepting a result. This application allows the deletion of created tasks, and also allows the user to check off tasks to indicate their completion.
 This to-do application features validation when entering a new task, requiring at least 2 letters be entered before accepting a result. This application allows the deletion of created tasks, and also allows the user to check off tasks to indicate their completion.
 
 ## Technology
