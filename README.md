@@ -28,4 +28,4 @@ Mobile View Add Task Modal:
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+https://wittikay.github.io/se_project_todo-app/
