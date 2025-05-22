@@ -4,7 +4,7 @@ class Todo {
     this._templateElement = document.querySelector(selector);
   }
 
-  _date() {
+  _getDate() {
     this._dueDate = new Date(this._data.date);
     if (!isNaN(this._dueDate)) {
       this._todoDate.textContent = `Due: ${this._dueDate.toLocaleString(
@@ -51,7 +51,7 @@ class Todo {
 
     todoNameEl.textContent = this._data.name;
 
-    this._date();
+    this._getDate();
     this._generateCheckboxEL();
     this._setEventListeners();
     this._deleteListener();
