@@ -51,6 +51,7 @@ addTodoForm.addEventListener("submit", (evt) => {
   const values = { name, date, id };
   renderTodo(values);
   resetValidation();
+  closeModal();
 });
 
 initialTodos.forEach((item) => {

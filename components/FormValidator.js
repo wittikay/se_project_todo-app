@@ -62,7 +62,7 @@ class FormValidator {
     });
   }
 
-  enableValidation = (settings) => {
+  enableValidation = () => {
     this._form.addEventListener("submit", (evt) => {
       evt.preventDefault();
     });
@@ -74,7 +74,6 @@ class FormValidator {
       inputElement.value = "";
     });
     this._toggleButtonState();
-    this._buttonElement.disabled = true;
   };
 }
 
