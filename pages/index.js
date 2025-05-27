@@ -1,4 +1,3 @@
-console.log("I do not know why this error appears, I used the link provided in the project description.")
 import { initialTodos, validationConfig } from "../utils/constants.js";
 import Todo from "../components/Todo.js";
 import FormValidator from "../components/FormValidator.js";
@@ -51,7 +50,7 @@ addTodoForm.addEventListener("submit", (evt) => {
   const values = { name, date, id };
   renderTodo(values);
   newTodoValidator.resetValidation();
-  closeModal();
+  closeModal(addTodoPopup);
 });
 
 initialTodos.forEach((item) => {
