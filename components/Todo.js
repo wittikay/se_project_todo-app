@@ -19,31 +19,31 @@ class Todo {
   }
 
   _toggleCompletion() {
-  if (this._data.completed) {
-    this._todoElement.classList.add("todo_completed");
-  } else {
-    this._todoElement.classList.remove("todo_completed");
+    if (this._data.completed) {
+      this._todoElement.classList.add("todo_completed");
+    } else {
+      this._todoElement.classList.remove("todo_completed");
+    }
   }
-}
 
   _deleteListener() {
-  this._todoDeleteBtn.addEventListener("click", () => {
-    this._todoElement.remove();
-    if (typeof this.handleDelete === "function") {
-      this.handleDelete(this._data.completed);
-    }
-  });
-}
+    this._todoDeleteBtn.addEventListener("click", () => {
+      this._todoElement.remove();
+      if (typeof this.handleDelete === "function") {
+        this.handleDelete(this._data.completed);
+      }
+    });
+  }
 
-_setEventListeners() {
-  this._todoCheckboxEl.addEventListener("change", () => {
-    this._data.completed = this._todoCheckboxEl.checked;
-    this._toggleCompletion();
-    if (typeof this.handleCheckboxClick === "function") {
-      this.handleCheckboxClick(this._data.completed);
-    }
-  });
-}
+  _setEventListeners() {
+    this._todoCheckboxEl.addEventListener("change", () => {
+      this._data.completed = this._todoCheckboxEl.checked;
+      this._toggleCompletion();
+      if (typeof this.handleCheckboxClick === "function") {
+        this.handleCheckboxClick(this._data.completed);
+      }
+    });
+  }
 
   _generateCheckboxEL() {
     this._todoCheckboxEl = this._todoElement.querySelector(".todo__completed");
